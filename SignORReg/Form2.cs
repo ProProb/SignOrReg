@@ -13,12 +13,10 @@ namespace SignORReg
     
     public partial class Form2 : Form
     {
-        public Form2(string a)
+        public Form2()
         {
             InitializeComponent();
-            a = textBox2.Text;
         }
-
         private void close_Click(object sender, EventArgs e)
         {
             Close();

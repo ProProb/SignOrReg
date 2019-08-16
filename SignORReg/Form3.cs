@@ -19,7 +19,9 @@ namespace SignORReg
 
         private void label1_Click(object sender, EventArgs e)
         {
-            label1.Text = "Hello, " + a;
+            label1.Text = "Hello, ";
         }
+        
+
     }
 }
