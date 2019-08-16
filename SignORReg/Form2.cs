@@ -32,6 +32,10 @@ namespace SignORReg
             else
                 MessageBox.Show("You have to agree with our rules");
         }
-      
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
