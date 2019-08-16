@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace SignORReg
 {
+    
     public partial class Form2 : Form
     {
-        public Form2()
+        public Form2(string a)
         {
             InitializeComponent();
+            a = textBox2.Text;
         }
 
         private void close_Click(object sender, EventArgs e)
@@ -30,7 +32,8 @@ namespace SignORReg
                 form3.Show();
             }
             else
-                MessageBox.Show("You need to agree with our rules");
+                MessageBox.Show("You have to agree with our rules");
         }
+      
     }
 }
