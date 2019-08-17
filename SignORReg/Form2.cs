@@ -13,6 +13,7 @@ namespace SignORReg
     
     public partial class Form2 : Form
     {
+        static public string name;
         public Form2()
         {
             InitializeComponent();
@@ -36,6 +37,11 @@ namespace SignORReg
         private void Form2_Load(object sender, EventArgs e)
         {
 
+        }
+        
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            name = textBox2.Text;
         }
     }
 }

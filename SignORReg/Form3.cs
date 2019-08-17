@@ -19,7 +19,10 @@ namespace SignORReg
 
         private void label1_Click(object sender, EventArgs e)
         {
-            label1.Text = "Hello, ";
+            Form2 form2 = new Form2();
+            form2.ShowDialog();
+            
+            label1.Text = "Hello, " + name;
         }
         
 
