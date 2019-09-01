@@ -25,13 +25,19 @@ namespace SignORReg
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (checkBox1.Checked == true)
+            if (checkBox1.Checked == true && log1.Text!="" && pass1.Text != "" && textBox2.Text != "" && textBox3.Text != "")
             {
                 Form3 form3 = new Form3();
                 form3.Show();
             }
-            else
+            else if(checkBox1.Checked == false)
+            {
                 MessageBox.Show("You have to agree with our rules");
+            }
+            else 
+            {
+                MessageBox.Show("You have to write your Login, Password, Phone number and Name");
+            }
         }
 
         private void Form2_Load(object sender, EventArgs e)
