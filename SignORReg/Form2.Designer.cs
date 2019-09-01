@@ -72,6 +72,7 @@
             this.pass1.Name = "pass1";
             this.pass1.Size = new System.Drawing.Size(100, 20);
             this.pass1.TabIndex = 2;
+            this.pass1.TextChanged += new System.EventHandler(this.pass1_TextChanged);
             // 
             // label3
             // 

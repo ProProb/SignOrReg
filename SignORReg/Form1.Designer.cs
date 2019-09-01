@@ -48,6 +48,7 @@
             this.sign.TabIndex = 0;
             this.sign.Text = "Sign in";
             this.sign.UseVisualStyleBackColor = false;
+            this.sign.Click += new System.EventHandler(this.sign_Click);
             // 
             // close
             // 
