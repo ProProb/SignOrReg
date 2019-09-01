@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace SignORReg
 {
     public partial class Form1 : Form
@@ -57,8 +58,18 @@ namespace SignORReg
 
         private void sign_Click(object sender, EventArgs e)
         {
-            
-            
+            string conn = @"Data Source=WIN-8B7JOVS4DVJ\SQLEXPRESS;Initial Catalog=Testing;Integrated Security=True";
+            //строка подключения к твоей БД
+           
+            MyDataClassDataContext db = new MyDataClassDataContext(conn);//подключение к БД            
+            Table inst = (from X in db.Table
+                          where X.Login.Contains("b")
+                          select X).Single<Table>();
+            //запрос в таблицу данных - по уникальному признаку, в данном случае
+            //где поле desr содержит в себе "88"
+            inst.descr = "Changes were here"; //изменения интересующего тебя поля
+            db.SubmitChanges();//опять же сохранение изменений в базе.
+
         }
     }
 }
