@@ -10,21 +10,16 @@ using System.Windows.Forms;
 
 namespace SignORReg
 {
-    public partial class Form3 : Form
+    public partial class Form4 : Form
     {
-        public Form3()
+        public Form4()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void phone_TextChanged(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
-            form2.ShowDialog();
-            
-            label1.Text = "Hello, " ;
-        }
-        
 
+        }
     }
 }

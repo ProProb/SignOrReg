@@ -32,5 +32,27 @@ namespace SignORReg
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form4 form4 = new Form4();
+            form4.Show();
+        }
+        public static bool tf = false;
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            switch (tf)
+            {
+                case false:
+                    tf = true; textBox2.PasswordChar = '\0';
+                    break;
+                case true:
+                    tf = false; textBox2.PasswordChar = '*';
+                    break;
+
+            }
+               
+
+        }
     }
 }
